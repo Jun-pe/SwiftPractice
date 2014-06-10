@@ -10,13 +10,11 @@ import Foundation
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad(){
         super.viewDidLoad()
         
-        var screen = UIScreen.mainScreen().bounds
-
-        var helloView = HelloView(frame: CGRectMake(0, 0, screen.width, screen.height))
+        var helloView = HelloView(frame: self.view.bounds)
         self.view.addSubview(helloView)
         
     }
