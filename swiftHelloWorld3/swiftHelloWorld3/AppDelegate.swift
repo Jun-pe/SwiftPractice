@@ -15,12 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var controller: ViewController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
+        // Obj-C
+        // self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+
         // Override point for customization after application launch.
         
-        var controller: ViewController = ViewController()
+        controller = ViewController()
 
-        self.window!.addSubview(controller.view)
+        // controllerの後ろに?か!をつけないとエラー
+        self.window!.addSubview(controller!.view)
         self.window!.makeKeyAndVisible()
         return true
     }

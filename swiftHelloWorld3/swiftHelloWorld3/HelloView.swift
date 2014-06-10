@@ -7,9 +7,10 @@
 //
 
 import Foundation
+// UIKitのインポート
 import UIKit
 
-// UIViewを継承しない場合、superクラスの初期化を呼べないので、普通にインスタンスを作る
+// UIViewを継承しない場合、superクラスのinitを呼べないので、普通にインスタンスを作る
 /*
 class HelloView {
     var view: UIView
@@ -62,6 +63,8 @@ class HelloView: UIView ,UITextFieldDelegate {
         myButton.frame = CGRectMake(20, 200, 200, 50)
         myButton.backgroundColor = UIColor.whiteColor()
         myButton.setTitle("実行", forState:UIControlState.Normal)
+        
+        // obj-c [myButton addTarget:self action:@selector(changeGreeting:) forControlEvents:UIControlEventTouchUpInside];
         myButton.addTarget(self, action: "changeGreeting:", forControlEvents: UIControlEvents.TouchUpInside)
         self.addSubview(myButton)
     }
@@ -73,7 +76,6 @@ class HelloView: UIView ,UITextFieldDelegate {
     }
     
     func changeGreeting(sender: UIButton!) {
-        NSLog("aaa")
         myLabel.text = myText.text
         myText.text = ""
     }
