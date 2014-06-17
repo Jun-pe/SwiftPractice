@@ -7,3 +7,28 @@
 //
 
 import Foundation
+import UIKit
+
+class SecondView: UIView {
+    var label: UILabel = UILabel()
+    var button: UIButton = UIButton()
+    
+    init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        label.frame = CGRectMake(50, 60, 200, 30)
+        label.textColor = UIColor.blackColor()
+        label.text = "chage the page!"
+        self.addSubview(label)
+        
+        button.frame = CGRectMake(100, 100, 120, 40)
+        button.setTitle("戻る", forState: UIControlState.Normal)
+        button.addTarget(self, action:"backPage:", forControlEvents:UIControlEvents.TouchUpInside)
+        self.addSubview(button)
+    }
+    
+    func backPage(sender: UIButton) {
+        NSLog("戻るぜ")
+    }
+    
+}

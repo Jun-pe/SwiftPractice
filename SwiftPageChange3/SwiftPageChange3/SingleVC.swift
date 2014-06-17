@@ -14,7 +14,8 @@ class SingleVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var firstView = FirstView(frame: self.view.bounds)
+//        var firstView = FirstView(frame: self.view.bounds)
+        var firstView = SecondView(frame: self.view.bounds)
         firstView.backgroundColor = UIColor.blueColor()
         
         self.view.addSubview(firstView)
