@@ -12,12 +12,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
                             
     var window: UIWindow?
-
+    var singleVC: SingleVC?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         // Override point for customization after application launch.
-        self.window!.backgroundColor = UIColor.whiteColor()
+        
+        singleVC = SingleVC()
+        
+        self.window!.addSubview(singleVC!.view)
         self.window!.makeKeyAndVisible()
         return true
     }

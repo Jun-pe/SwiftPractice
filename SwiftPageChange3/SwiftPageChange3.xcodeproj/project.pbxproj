@@ -77,10 +77,9 @@
 		B46EFA90195030ED0052931D /* SwiftPageChange3 */ = {
 			isa = PBXGroup;
 			children = (
+				B46EFAB219503B770052931D /* viewcontrol */,
+				B46EFAB119503B6E0052931D /* view */,
 				B46EFA93195030ED0052931D /* AppDelegate.swift */,
-				B46EFAAB19503A430052931D /* SingleVC.swift */,
-				B46EFAAD19503A4E0052931D /* FirstView.swift */,
-				B46EFAAF19503A560052931D /* SecondView.swift */,
 				B46EFA95195030ED0052931D /* Images.xcassets */,
 				B46EFA91195030ED0052931D /* Supporting Files */,
 			);
@@ -110,6 +109,23 @@
 				B46EFAA0195030ED0052931D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B46EFAB119503B6E0052931D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B46EFAAD19503A4E0052931D /* FirstView.swift */,
+				B46EFAAF19503A560052931D /* SecondView.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		B46EFAB219503B770052931D /* viewcontrol */ = {
+			isa = PBXGroup;
+			children = (
+				B46EFAAB19503A430052931D /* SingleVC.swift */,
+			);
+			name = viewcontrol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
