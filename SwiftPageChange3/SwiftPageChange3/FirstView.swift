@@ -9,10 +9,16 @@
 import Foundation
 import UIKit
 
+// delegate用のprotocolを実装
+protocol FirstViewDelegate {
+    func buttonTouched(pageCd: String)
+}
+
 class FirstView: UIView {
     
     var label: UILabel = UILabel()
     var button: UIButton = UIButton()
+    var delegate: FirstViewDelegate?
     
     init (frame: CGRect) {
         super.init(frame: frame)
@@ -30,6 +36,7 @@ class FirstView: UIView {
     }
     
     func changePage(sender: UIButton) {
-        NSLog("タッチ")
+        // protocolに登録したdelegateを呼び出す
+        delegate?.buttonTouched("f")
     }
 }
