@@ -15,6 +15,7 @@
 		B41B6F361952BB7F00D35359 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B6F351952BB7F00D35359 /* SecondVC.swift */; };
 		B41B6F381952BB8E00D35359 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B6F371952BB8E00D35359 /* FirstView.swift */; };
 		B41B6F3A1952BB9600D35359 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B6F391952BB9600D35359 /* SecondView.swift */; };
+		B41B6F3C1952E25D00D35359 /* FNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B6F3B1952E25D00D35359 /* FNextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		B41B6F351952BB7F00D35359 /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		B41B6F371952BB8E00D35359 /* FirstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		B41B6F391952BB9600D35359 /* SecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		B41B6F3B1952E25D00D35359 /* FNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				B41B6F371952BB8E00D35359 /* FirstView.swift */,
+				B41B6F3B1952E25D00D35359 /* FNextView.swift */,
 				B41B6F391952BB9600D35359 /* SecondView.swift */,
 			);
 			name = View;
@@ -231,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B41B6F3C1952E25D00D35359 /* FNextView.swift in Sources */,
 				B41B6F3A1952BB9600D35359 /* SecondView.swift in Sources */,
 				B41B6F181952BA0600D35359 /* AppDelegate.swift in Sources */,
 				B41B6F381952BB8E00D35359 /* FirstView.swift in Sources */,

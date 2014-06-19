@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 
 class FirstVC: UIViewController {
+    
     var firstView: FirstView?
+    
     override func viewDidLoad(){
         super.viewDidLoad()
         

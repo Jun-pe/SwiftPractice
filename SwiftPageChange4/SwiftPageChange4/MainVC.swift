@@ -12,11 +12,15 @@ import UIKit
 class MainVC: UIViewController {
     
     var firstVC: FirstVC?
+    var secondVC: SecondVC?
+    
     override func viewDidLoad(){
         super.viewDidLoad()
         
         firstVC = FirstVC()
+        secondVC = SecondVC()
         
         self.view.addSubview(firstVC!.view)
+//        self.view.addSubview(secondVC!.view)
     }
 }

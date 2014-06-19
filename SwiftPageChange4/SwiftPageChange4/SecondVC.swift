@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import UIKit
+
+class SecondVC: UIViewController {
+    
+    var secondView: SecondView?
+    override func viewDidLoad(){
+        super.viewDidLoad()
+        
+        secondView = SecondView(frame: self.view.bounds)
+        
+        self.view.addSubview(secondView)
+    }
+}
