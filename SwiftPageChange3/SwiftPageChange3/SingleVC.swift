@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 // delegateを読み込むためにprotocolを実装
-class SingleVC: UIViewController, FirstViewDelegate {
+class SingleVC: UIViewController, FirstViewDelegate, SecondViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,15 +25,25 @@ class SingleVC: UIViewController, FirstViewDelegate {
     
     func buttonTouched(pageCd: String){
         // view の切り替え
-        var nextView: UIView!
+
         
         if (pageCd == "f") {
-            nextView = SecondView(frame: self.view.bounds)
-            nextView.backgroundColor = UIColor.greenColor()
+            var secondView = SecondView(frame: self.view.bounds)
+            secondView.backgroundColor = UIColor.greenColor()
+            secondView.delegate = self
+            viewChange(secondView)
+        } else {
+            var firstView = FirstView(frame: self.view.bounds)
+            firstView.backgroundColor = UIColor.redColor()
+            firstView.delegate = self
+            viewChange(firstView)
         }
+        
+    }
+    func viewChange(view: UIView){
         for uv : AnyObject in self.view.subviews {
             uv.removeFromSuperview()
         }
-        self.view.addSubview(nextView)
+        self.view.addSubview(view)
     }
 }

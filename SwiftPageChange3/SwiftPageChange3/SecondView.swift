@@ -9,9 +9,13 @@
 import Foundation
 import UIKit
 
+protocol SecondViewDelegate {
+    func buttonTouched(pageCd: String)
+}
 class SecondView: UIView {
     var label: UILabel = UILabel()
     var button: UIButton = UIButton()
+    var delegate: SecondViewDelegate?
     
     init(frame: CGRect) {
         super.init(frame: frame)
@@ -28,7 +32,7 @@ class SecondView: UIView {
     }
     
     func backPage(sender: UIButton) {
-        NSLog("戻るぜ")
+        delegate?.buttonTouched("s")
     }
     
 }
