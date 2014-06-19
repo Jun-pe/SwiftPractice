@@ -21,6 +21,8 @@ class SecondView: UIView {
     init(frame: CGRect) {
         super.init(frame: frame)
         
+        self.backgroundColor = UIColor.greenColor()
+        
         label.frame = CGRectMake(50, 60, 200, 30)
         label.textColor = UIColor.blackColor()
         label.text = "chage the page!"

@@ -23,6 +23,8 @@ class FirstView: UIView {
     init (frame: CGRect) {
         super.init(frame: frame)
         
+        self.backgroundColor = UIColor.blueColor()
+        
         label.frame = CGRectMake(50, 60, 200, 30)
         label.text = "Hello Swift! pageChange3"
         label.textColor = UIColor.blackColor()
