@@ -10,6 +10,11 @@
 		B41B6F181952BA0600D35359 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B6F171952BA0600D35359 /* AppDelegate.swift */; };
 		B41B6F1A1952BA0600D35359 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B41B6F191952BA0600D35359 /* Images.xcassets */; };
 		B41B6F261952BA0600D35359 /* SwiftPageChange4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B6F251952BA0600D35359 /* SwiftPageChange4Tests.swift */; };
+		B41B6F321952BB6C00D35359 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B6F311952BB6C00D35359 /* MainVC.swift */; };
+		B41B6F341952BB7700D35359 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B6F331952BB7700D35359 /* FirstVC.swift */; };
+		B41B6F361952BB7F00D35359 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B6F351952BB7F00D35359 /* SecondVC.swift */; };
+		B41B6F381952BB8E00D35359 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B6F371952BB8E00D35359 /* FirstView.swift */; };
+		B41B6F3A1952BB9600D35359 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B6F391952BB9600D35359 /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +35,11 @@
 		B41B6F1F1952BA0600D35359 /* SwiftPageChange4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPageChange4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41B6F241952BA0600D35359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B41B6F251952BA0600D35359 /* SwiftPageChange4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPageChange4Tests.swift; sourceTree = "<group>"; };
+		B41B6F311952BB6C00D35359 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		B41B6F331952BB7700D35359 /* FirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		B41B6F351952BB7F00D35359 /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		B41B6F371952BB8E00D35359 /* FirstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		B41B6F391952BB9600D35359 /* SecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,8 @@
 		B41B6F141952BA0600D35359 /* SwiftPageChange4 */ = {
 			isa = PBXGroup;
 			children = (
+				B41B6F301952BB5600D35359 /* View */,
+				B41B6F2F1952BB4500D35359 /* ViewControl */,
 				B41B6F171952BA0600D35359 /* AppDelegate.swift */,
 				B41B6F191952BA0600D35359 /* Images.xcassets */,
 				B41B6F151952BA0600D35359 /* Supporting Files */,
@@ -101,6 +113,25 @@
 				B41B6F241952BA0600D35359 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B41B6F2F1952BB4500D35359 /* ViewControl */ = {
+			isa = PBXGroup;
+			children = (
+				B41B6F311952BB6C00D35359 /* MainVC.swift */,
+				B41B6F331952BB7700D35359 /* FirstVC.swift */,
+				B41B6F351952BB7F00D35359 /* SecondVC.swift */,
+			);
+			name = ViewControl;
+			sourceTree = "<group>";
+		};
+		B41B6F301952BB5600D35359 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B41B6F371952BB8E00D35359 /* FirstView.swift */,
+				B41B6F391952BB9600D35359 /* SecondView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +231,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B41B6F3A1952BB9600D35359 /* SecondView.swift in Sources */,
 				B41B6F181952BA0600D35359 /* AppDelegate.swift in Sources */,
+				B41B6F381952BB8E00D35359 /* FirstView.swift in Sources */,
+				B41B6F341952BB7700D35359 /* FirstVC.swift in Sources */,
+				B41B6F361952BB7F00D35359 /* SecondVC.swift in Sources */,
+				B41B6F321952BB6C00D35359 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
