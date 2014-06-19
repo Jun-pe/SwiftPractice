@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B41B6F181952BA0600D35359 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B6F171952BA0600D35359 /* AppDelegate.swift */; };
+		B41B6F1A1952BA0600D35359 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B41B6F191952BA0600D35359 /* Images.xcassets */; };
+		B41B6F261952BA0600D35359 /* SwiftPageChange4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B6F251952BA0600D35359 /* SwiftPageChange4Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B41B6F201952BA0600D35359 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B41B6F0A1952BA0600D35359 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B41B6F111952BA0600D35359;
+			remoteInfo = SwiftPageChange4;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B41B6F121952BA0600D35359 /* SwiftPageChange4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPageChange4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41B6F161952BA0600D35359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B41B6F171952BA0600D35359 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B41B6F191952BA0600D35359 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B41B6F1F1952BA0600D35359 /* SwiftPageChange4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPageChange4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41B6F241952BA0600D35359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B41B6F251952BA0600D35359 /* SwiftPageChange4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPageChange4Tests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B41B6F0F1952BA0600D35359 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41B6F1C1952BA0600D35359 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B41B6F091952BA0600D35359 = {
+			isa = PBXGroup;
+			children = (
+				B41B6F141952BA0600D35359 /* SwiftPageChange4 */,
+				B41B6F221952BA0600D35359 /* SwiftPageChange4Tests */,
+				B41B6F131952BA0600D35359 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B41B6F131952BA0600D35359 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B41B6F121952BA0600D35359 /* SwiftPageChange4.app */,
+				B41B6F1F1952BA0600D35359 /* SwiftPageChange4Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B41B6F141952BA0600D35359 /* SwiftPageChange4 */ = {
+			isa = PBXGroup;
+			children = (
+				B41B6F171952BA0600D35359 /* AppDelegate.swift */,
+				B41B6F191952BA0600D35359 /* Images.xcassets */,
+				B41B6F151952BA0600D35359 /* Supporting Files */,
+			);
+			path = SwiftPageChange4;
+			sourceTree = "<group>";
+		};
+		B41B6F151952BA0600D35359 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B41B6F161952BA0600D35359 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B41B6F221952BA0600D35359 /* SwiftPageChange4Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B41B6F251952BA0600D35359 /* SwiftPageChange4Tests.swift */,
+				B41B6F231952BA0600D35359 /* Supporting Files */,
+			);
+			path = SwiftPageChange4Tests;
+			sourceTree = "<group>";
+		};
+		B41B6F231952BA0600D35359 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B41B6F241952BA0600D35359 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B41B6F111952BA0600D35359 /* SwiftPageChange4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B41B6F291952BA0600D35359 /* Build configuration list for PBXNativeTarget "SwiftPageChange4" */;
+			buildPhases = (
+				B41B6F0E1952BA0600D35359 /* Sources */,
+				B41B6F0F1952BA0600D35359 /* Frameworks */,
+				B41B6F101952BA0600D35359 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftPageChange4;
+			productName = SwiftPageChange4;
+			productReference = B41B6F121952BA0600D35359 /* SwiftPageChange4.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B41B6F1E1952BA0600D35359 /* SwiftPageChange4Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B41B6F2C1952BA0600D35359 /* Build configuration list for PBXNativeTarget "SwiftPageChange4Tests" */;
+			buildPhases = (
+				B41B6F1B1952BA0600D35359 /* Sources */,
+				B41B6F1C1952BA0600D35359 /* Frameworks */,
+				B41B6F1D1952BA0600D35359 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B41B6F211952BA0600D35359 /* PBXTargetDependency */,
+			);
+			name = SwiftPageChange4Tests;
+			productName = SwiftPageChange4Tests;
+			productReference = B41B6F1F1952BA0600D35359 /* SwiftPageChange4Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B41B6F0A1952BA0600D35359 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Self;
+				TargetAttributes = {
+					B41B6F111952BA0600D35359 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					B41B6F1E1952BA0600D35359 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = B41B6F111952BA0600D35359;
+					};
+				};
+			};
+			buildConfigurationList = B41B6F0D1952BA0600D35359 /* Build configuration list for PBXProject "SwiftPageChange4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B41B6F091952BA0600D35359;
+			productRefGroup = B41B6F131952BA0600D35359 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B41B6F111952BA0600D35359 /* SwiftPageChange4 */,
+				B41B6F1E1952BA0600D35359 /* SwiftPageChange4Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B41B6F101952BA0600D35359 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41B6F1A1952BA0600D35359 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41B6F1D1952BA0600D35359 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B41B6F0E1952BA0600D35359 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41B6F181952BA0600D35359 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41B6F1B1952BA0600D35359 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41B6F261952BA0600D35359 /* SwiftPageChange4Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B41B6F211952BA0600D35359 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B41B6F111952BA0600D35359 /* SwiftPageChange4 */;
+			targetProxy = B41B6F201952BA0600D35359 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B41B6F271952BA0600D35359 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B41B6F281952BA0600D35359 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B41B6F2A1952BA0600D35359 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = SwiftPageChange4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B41B6F2B1952BA0600D35359 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = SwiftPageChange4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B41B6F2D1952BA0600D35359 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftPageChange4.app/SwiftPageChange4";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftPageChange4Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		B41B6F2E1952BA0600D35359 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftPageChange4.app/SwiftPageChange4";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftPageChange4Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B41B6F0D1952BA0600D35359 /* Build configuration list for PBXProject "SwiftPageChange4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B41B6F271952BA0600D35359 /* Debug */,
+				B41B6F281952BA0600D35359 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B41B6F291952BA0600D35359 /* Build configuration list for PBXNativeTarget "SwiftPageChange4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B41B6F2A1952BA0600D35359 /* Debug */,
+				B41B6F2B1952BA0600D35359 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B41B6F2C1952BA0600D35359 /* Build configuration list for PBXNativeTarget "SwiftPageChange4Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B41B6F2D1952BA0600D35359 /* Debug */,
+				B41B6F2E1952BA0600D35359 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B41B6F0A1952BA0600D35359 /* Project object */;
+}
