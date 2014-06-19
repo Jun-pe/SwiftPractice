@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 protocol SecondViewDelegate {
+    // delegate先のfunctionをfirstViewと合わせることで処理をまとめる
     func buttonTouched(pageCd: String)
 }
 class SecondView: UIView {
