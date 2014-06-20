@@ -9,18 +9,34 @@
 import Foundation
 import UIKit
 
+protocol SecondViewDelegate {
+    func changeVC(vcId: String)
+}
 class SecondView: UIView {
     
     var label: UILabel = UILabel()
+    var buttonVCChange: UIButton = UIButton()
+    var delegate: SecondViewDelegate?
+    
     init(frame: CGRect){
         super.init(frame: frame)
         
         self.backgroundColor = UIColor.blackColor()
         
-        label.frame = CGRectMake(100, 20, 280, 40)
+        label.frame = CGRectMake(20, 60, 280, 40)
         label.text = "Welcome to UnderGround..."
         label.textColor = UIColor.redColor()
         
         self.addSubview(label)
+        
+        buttonVCChange.frame = CGRectMake(50, 120, 220, 40)
+        buttonVCChange.setTitle("FirstVCを表示", forState: UIControlState.Normal)
+        buttonVCChange.addTarget(self, action:"changeFirstVC:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        self.addSubview(buttonVCChange)
+    }
+    
+    func changeFirstVC(sender: UIButton) {
+        delegate?.changeVC("first")
     }
 }

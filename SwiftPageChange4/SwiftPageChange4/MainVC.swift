@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 
-class MainVC: UIViewController {
+// windowに直接乗る基底となるVC　他のVCの切り替えをコントロールする
+class MainVC: UIViewController, FirstVCDelegate, SecondVCDelegate {
     
     var firstVC: FirstVC?
     var secondVC: SecondVC?
@@ -20,7 +21,21 @@ class MainVC: UIViewController {
         firstVC = FirstVC()
         secondVC = SecondVC()
         
+        firstVC!.delegate = self
         self.view.addSubview(firstVC!.view)
-//        self.view.addSubview(secondVC!.view)
+    }
+    
+    // VCの切り替え処理
+    func changeVC(vcId: String) {
+        // やっていることはviewの切り替えと同じで、現在のviewを除去して新しいviewを張り直している
+        if (vcId == "second") {
+            firstVC!.view.removeFromSuperview()
+            secondVC!.delegate = self
+            self.view.addSubview(secondVC!.view)
+        } else {
+            secondVC!.view.removeFromSuperview()
+            firstVC!.delegate = self
+            self.view.addSubview(firstVC!.view)
+        }
     }
 }

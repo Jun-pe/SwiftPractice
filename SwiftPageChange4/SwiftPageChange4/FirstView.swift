@@ -9,10 +9,17 @@
 import Foundation
 import UIKit
 
+// delegate処理を２つ実装
+protocol FirstViewDelegate {
+    func changeVC(vcId: String)
+    func changeView(viewId: String)
+}
 class FirstView: UIView {
 
     var label: UILabel = UILabel()
     var button: UIButton = UIButton()
+    var buttonVCChange: UIButton = UIButton()
+    var delegate: FirstViewDelegate?
     
     init(frame: CGRect){
         super.init(frame: frame)
@@ -27,14 +34,29 @@ class FirstView: UIView {
         
         button.frame = CGRectMake(50, 120, 220, 40)
         button.setTitle("view切り替え", forState: UIControlState.Normal)
-        button.addTarget(self, action:"changeViewbtn:", forControlEvents: UIControlEvents.TouchUpInside)
+        button.addTarget(self, action:"changeViewBtn:", forControlEvents: UIControlEvents.TouchUpInside)
         self.addSubview(button)
+        
+        buttonVCChange.frame = CGRectMake(50, 180, 220, 40)
+        buttonVCChange.setTitle("SecondVCを表示", forState: UIControlState.Normal)
+        buttonVCChange.addTarget(self, action:"changeSecondVC:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.addSubview(buttonVCChange)
     }
     
-    func changeViewbtn(sender: UIButton) {
+    // 自分自身を親Viewからremoveして次のviewを張り直す
+    // 制御しにくいのでFirstVCでViewきりかえ
+/*    func changeViewbtn(sender: UIButton) {
 
         var fNextView: FNextView = FNextView(frame: self.bounds)
         self.superview.addSubview(fNextView)
         self.removeFromSuperview()
+    }
+*/
+    func changeViewBtn(sender: UIButton){
+        delegate?.changeView("f")
+    }
+    
+    func changeSecondVC(sender: UIButton){
+        delegate?.changeVC("second")
     }
 }

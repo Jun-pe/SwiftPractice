@@ -9,11 +9,14 @@
 import Foundation
 import UIKit
 
+protocol FNextViewDelegate {
+    func changeView(viewId: String)
+}
 class FNextView: UIView {
     
     var label: UILabel = UILabel()
     var button: UIButton = UIButton()
-    
+    var delegate: FNextViewDelegate?
     init(frame: CGRect){
         super.init(frame: frame)
         
@@ -32,9 +35,15 @@ class FNextView: UIView {
         self.addSubview(button)
     }
     
-    func changeViewBtn(sender: UIButton) {
+    // 制御しにくいのでFirstVCでViewきりかえ
+/*    func changeViewBtn(sender: UIButton) {
         var firstView: FirstView = FirstView(frame: self.bounds)
+        firstView!.delegate = self.superview
         self.superview.addSubview(firstView)
         self.removeFromSuperview()
+    }
+*/
+    func changeViewBtn(sender: UIButton) {
+        delegate?.changeView("n")
     }
 }

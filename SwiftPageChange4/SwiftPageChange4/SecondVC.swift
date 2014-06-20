@@ -9,14 +9,23 @@
 import Foundation
 import UIKit
 
-class SecondVC: UIViewController {
+protocol SecondVCDelegate {
+    func changeVC(vcId:String)
+}
+class SecondVC: UIViewController, SecondViewDelegate {
     
     var secondView: SecondView?
+    var delegate: SecondVCDelegate?
+    
     override func viewDidLoad(){
         super.viewDidLoad()
         
         secondView = SecondView(frame: self.view.bounds)
-        
+        secondView!.delegate = self
         self.view.addSubview(secondView)
+    }
+    
+    func changeVC(vcId: String) {
+        delegate?.changeVC(vcId)
     }
 }
